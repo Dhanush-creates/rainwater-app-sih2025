@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { requestUserGeolocation, saveUserLocation, loadUserLocation } from '../../api/geolocation.js'
+import { requestUserGeolocation, saveUserLocation, loadUserLocation } from '../api/geolocation.js'
 import { ACCUWEATHER_API_KEY } from '../utils/api.js'
 import { useLanguage } from '../contexts/LanguageContext'
 import LocationAutocomplete from '../components/LocationAutocomplete'

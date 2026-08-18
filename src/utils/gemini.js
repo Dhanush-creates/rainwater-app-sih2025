@@ -1,4 +1,4 @@
-import { assessRWHFeasibility } from '../../api/grok.js';
+import { assessRWHFeasibility } from '../api/grok.js';
 
 /**
  * Generates a beautiful AI recommendation using Grok API.

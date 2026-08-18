@@ -1,4 +1,4 @@
-import { assessRWHFeasibility } from '../../api/grok.js';
+import { assessRWHFeasibility } from '../api/grok.js';
 // Correct relative import (same directory)
 import { fetchAnnualRainfallMeters } from './rainfall';
 
