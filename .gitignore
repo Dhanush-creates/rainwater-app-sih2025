@@ -28,6 +28,3 @@ dist-ssr
 .env.local
 .env.*.local
 .env.production
-
-# API keys (legacy, kept for safety)
-src/utils/api.js

@@ -23,5 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
-# API keys
-src/utils/api.js
+# Environment / Secret files — NEVER commit these
+.env
+.env.local
+.env.*.local
+.env.production
