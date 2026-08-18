@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm install",
+  "framework": "vite",
+  "functions": {
+    "vercel/api/weather.js": {
+      "memory": 256,
+      "maxDuration": 15
+    },
+    "vercel/api/groundwater.js": {
+      "memory": 256,
+      "maxDuration": 15
+    },
+    "vercel/api/gemini.js": {
+      "memory": 256,
+      "maxDuration": 30
+    },
+    "vercel/api/grok.js": {
+      "memory": 256,
+      "maxDuration": 30
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/weather(.*)",
+      "dest": "/vercel/api/weather.js"
+    },
+    {
+      "src": "/api/groundwater(.*)",
+      "dest": "/vercel/api/groundwater.js"
+    },
+    {
+      "src": "/api/gemini(.*)",
+      "dest": "/vercel/api/gemini.js"
+    },
+    {
+      "src": "/api/grok(.*)",
+      "dest": "/vercel/api/grok.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
